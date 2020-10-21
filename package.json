@@ -1,0 +1,28 @@
+{
+  "name": "sapce_invaders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "pkg": "./node_modules/pkg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "pkg": "^4.4.9"
+  },
+  "pkg": {
+    "assets": "node_modules/blessed/**/*"
+  },
+  "bin":"index.js"
+}
