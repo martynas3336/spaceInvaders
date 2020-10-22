@@ -1,6 +1,6 @@
 ## Space Invaders
 
-#### Scripts
+### Scripts
 `start` - start application.  
 `package:windows` - package (compile) windows executable.  
 `package:linux` - package (compile) linux executable.  
