@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "package:windows": "./node_modules/.bin/pkg . --targets node12-win-x64 --output spaceInvadersWin.exe",
+    "package:windows": "./node_modules/.bin/pkg . --targets node12-win-x64 --output spaceInvadersWindows.exe",
     "package:linux": "./node_modules/.bin/pkg . --targets node12-linux-x64 --output spaceInvadersLinux",
     "package:mac": "./node_modules/.bin/pkg . --targets node12-macos-x64 --output spaceInvadersMac"
   },

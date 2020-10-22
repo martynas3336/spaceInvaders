@@ -9,8 +9,6 @@ class GameScreen {
 
   constructor(context) {
     this.context = context;
-    this.width = config.screenWidth;
-    this.height = config.screenHeight;
     this.entity = blessed.box({
       parent: this.context.window.screen,
       content: this.context.skin,

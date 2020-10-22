@@ -5,9 +5,9 @@ const handler = {
   enemyHorizontalSpacing: 2,
   enemyVerticalSpacing: 1,
   playerStartingPositionX: 30,
-  playerStartingPositionY: 45,
+  playerStartingPositionY: 35,
   screenWidth: 70,
-  screenHeight: 50,
+  screenHeight: 40,
   ticks: 50,
   bulletCooldown: 500,
   scoreMultiplier: 15,
@@ -35,7 +35,7 @@ const handler = {
   dashboardX: 70,
   dashboardY: 0,
   dashboardWidth: 50,
-  dashboardHeight: 50,
+  dashboardHeight: 40,
 };
 
 module.exports = handler;
