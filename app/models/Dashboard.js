@@ -44,6 +44,11 @@ class Dashboard extends DashboardStructure {
 
   handleLevelComplete() {
     this.pause();
+    this.isLevelComplete = true;
+  }
+
+  handleStartAfterLevelComplete() {
+    this.isLevelComplete = false;
     this.level += 1;
   }
 

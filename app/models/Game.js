@@ -49,8 +49,12 @@ class Game extends GameStructure {
         if (this.dashboard.isGameOver) {
           this.destroyAllEnemies();
           this.dashboard.handleStartOver();
+          this.setup();
         }
-        this.setup();
+        if (this.dashboard.isLevelComplete) {
+          this.setup();
+          this.dashboard.handleStartAfterLevelComplete();
+        }
         this.dashboard.unpause();
       }
     });

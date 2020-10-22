@@ -17,6 +17,8 @@ class Dashboard {
 
   #isGameOver;
 
+  #isLevelComplete;
+
   #level;
 
   #speedMultiplierPerLevel;
@@ -27,6 +29,7 @@ class Dashboard {
     this.highScore = 0;
     this.killCount = 0;
     this.isGameOver = false;
+    this.isLevelComplete = false;
     this.isPaused = true;
     this.level = 1;
     this.speedMultiplierPerLevel = config.speedMultiplierPerLevel;
@@ -102,6 +105,14 @@ class Dashboard {
 
   get isGameOver() {
     return this.#isGameOver;
+  }
+
+  set isLevelComplete(isLevelComplete) {
+    this.#isLevelComplete = isLevelComplete;
+  }
+
+  get isLevelComplete() {
+    return this.#isLevelComplete;
   }
 
   set level(level) {
