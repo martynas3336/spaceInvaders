@@ -1,5 +1,7 @@
 const blessed = require('blessed');
 
+const config = require('../config');
+
 const CLI = require('../models/CLI');
 
 class Window {
@@ -7,13 +9,13 @@ class Window {
 
   #cli;
 
-  constructor(title, exitKeys) {
+  constructor() {
     this.screen = blessed.screen({
       smartCSR: true,
       autoPadding: true,
     });
-    this.screen.title = title;
-    this.screen.key(exitKeys, () => process.exit(0));
+    this.screen.title = config.title;
+    this.screen.key(config.exitButtons, () => process.exit(0));
     this.cli = new CLI(this);
   }
 

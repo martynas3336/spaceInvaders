@@ -1,4 +1,5 @@
 const handler = {
+  title: 'Space Invaders',
   enemyRowAmount: 8,
   enemyColumnAmount: 4,
   enemyHorizontalSpacing: 2,
@@ -14,6 +15,7 @@ const handler = {
   leftKeyPress: ['a', 'A', 'left'],
   rightKeyPress: ['d', 'D', 'right'],
   pauseButtons: ['p', 'P'],
+  exitButtons: ['C-c'],
   shootKeyPress: ['space'],
   player: {
     width: 3,

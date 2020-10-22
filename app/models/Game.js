@@ -160,7 +160,7 @@ class Game extends GameStructure {
         mostBottomEnemyY = entity.position.y;
       }
     });
-    if (mostBottomEnemyY > config.screenHeight) isGameOver = true;
+    if (mostBottomEnemyY + config.enemy.height > config.playerStartingPositionY) isGameOver = true;
     if (isGameOver) this.dashboard.handleGameOver();
   }
 

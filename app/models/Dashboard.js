@@ -16,6 +16,7 @@ class Dashboard extends DashboardStructure {
     this.blessed.setLine(10, `Ticks: ${this.context.ticks
     * (1 / this.speedMultiplierPerLevel) ** (this.level - 1)}`);
     this.blessed.setLine(12, `Pause Buttons: ${config.pauseButtons.join(', ')}`);
+    this.blessed.setLine(14, `Exit Buttons: ${config.exitButtons.join(', ')}`);
     this.context.window.screen.render();
   }
 
