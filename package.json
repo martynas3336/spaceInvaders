@@ -1,11 +1,13 @@
 {
-  "name": "sapce_invaders",
+  "name": "space_invaders",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "pkg": "./node_modules/pkg"
+    "package:windows": "./node_modules/.bin/pkg . --targets node12-win-x64 --output spaceInvadersWin.exe",
+    "package:linux": "./node_modules/.bin/pkg . --targets node12-linux-x64 --output spaceInvadersLinux",
+    "package:mac": "./node_modules/.bin/pkg . --targets node12-macos-x64 --output spaceInvadersMac"
   },
   "keywords": [],
   "author": "",

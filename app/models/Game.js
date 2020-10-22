@@ -179,7 +179,7 @@ class Game extends GameStructure {
       if (entity.position.x > mostRightEnemyX) {
         mostRightEnemyX = entity.position.x;
       }
-      if (entity.position.x < mostRightEnemyX) {
+      if (entity.position.x < mostLeftEnemyX) {
         mostLeftEnemyX = entity.position.x;
       }
     });
